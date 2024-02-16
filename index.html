@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTweb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="png/logo-color.png">
+</head>
+
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#"><img draggable="false" src="png/mt-whitelogo.png" alt="mtlogo"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#programar">Programación</a>
+            <a href="#rutinas">Fitness</a>
+        </nav>
+
+    </div>
+
+    <!--
+    <header class="content header">
+         <div class="btn-home">
+            <a href="" class="btn">Descargar</a>
+        </div>
+        
+        <h2 id="inicio" class="title">Inicio</h2>
+        <p id="prr" class="prr">En Dev3Gains, no solo creamos sitios web, aplicaciones y juegos excepcionales, sino que también tenemos una pasión innata por el mundo del deporte. Nuestra dedicación abarca desde el gimnasio hasta el poderoso powerlifting y el meticuloso bodybuilding. Nos esforzamos por llevar tu experiencia de entrenamiento al siguiente nivel.</p>
+        <p class="prr">En Dev3Gains, tu éxito es nuestra prioridad. Nos enorgullecemos de proporcionar soluciones personalizadas y adaptadas a tus necesidades. Ya sea que estés buscando optimizar tu rutina de entrenamiento o necesites una plataforma digital de vanguardia, estamos aquí para hacerlo posible.
+
+            Únete a nosotros en el viaje hacia la excelencia en el deporte y la tecnología. Juntos, alcanzaremos metas más allá de lo imaginable.</p>
+    </header>
+    -->
+    <section id="programar" class="content sau">
+        <h2 class="title" id="title1">Programacion</h2>
+        <p class="prr">En el mundo de la programación, cada proyecto es una oportunidad de innovar y crear cosas fantásticas. Te invito a explorar mis proyectos personales.</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-angular"><img src="images/mineblitzlogo.webp" alt="MineBlitz"></i>
+                <h3>MineBlitz</h3>
+                <p>MineBlitz: Desafía tu suerte en un campo minado!</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"><img src="images/FETB_logo.webp" alt="FETB"></i>
+                <h3>Física en tu bolsillo</h3>
+                <p>​Física en tu bolsillo es una aplicación móvil para estudiantes de física y amantes de la ciencia en general</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"><img src="images/monkeyfactorylogo.webp" alt="MonkeyFactory"></i>
+                <h3>Monkey Factory</h3>
+                <p>Fábrica de bananas en la cual conseguirás diferentes monos (Para la versión actualizada, busque en Google Play Store)</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-angular"><img src="images/Spoom_Logo.webp" alt=""></i>
+                <h3>Spoom</h3>
+                <p>Juego de plataformas en el que tendrás que recoger diferentes tipos de frutas para poder pasar de nivel.</p>
+            </div>
+            <div class="enlaces">
+                <a href="https://play.google.com/store/apps/dev?id=5653659665861292277"><img src="images/playstorelogo.webp" alt=""></a>
+                <a href="https://nanujomt.itch.io/"><img src="images/itchiologo.webp" alt=""></a>
+            </div>
+    </section>
+
+    <section id="rutinas" class="content sau">
+        <h2 class="title">Rutinas</h2>
+        <p class="prr">Aquí podrás encontrar rutinas personalizables y totalmente GRATIS que se adapta a tus necesidades y objetivos.</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="Pimg"><img src="images/plantillaSBD.png" alt="SBDPlantilla"></i>
+                <h3>Rutina SBD</h3>
+                <p>Esta rutina sirve para mejorar nuestras marcas en los ejercicios básicos y para generar fuerza e hipertrofia.</p>
+                <div class="btn-home">
+                    <button class="btn" onclick="descargarArchivo()">Descargar</button>
+                    <script src="script.js"></script>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!--
+    <div id="contacto" class="contacto">
+        <h2 class="title">Contacta con nosotros</h2>
+        <p class="prr">También puedes contactarnos por <a href="https://www.instagram.com/dev3gains/">Instagram</a></p>
+        <form class="colorful-form" action="https://formsubmit.co/dev3gains@gmail.com" method="POST" >
+            <div class="form-group">
+                <label class="form-label" for="name">Nombre:</label>
+                <input required="" placeholder="Introduce tu nombre" class="form-input" type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <input required="" placeholder="Introduce tu email" class="form-input" name="email" id="email" type="email">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="message">Mensaje:</label>
+                <textarea required="" placeholder="Introduce tu mensaje" class="form-input" name="comments"
+                    id="message"></textarea>
+            </div>
+            <button class="form-button" type="submit" value="Enviar">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function descargarArchivo2() {
+            window.location.href = 'archivos/rutina1850m.xlsx';
+        }   
+        
+        function descargarArchivo() {
+            window.location.href = 'archivos/RutinaSBD_6-12weeks.xlsx';
+        }
+    </script>    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          function ajustarMargenProgramacion() {
+            var header = document.querySelector('header');
+            var programacion = document.querySelector('#programacion');
+      
+            if (header && programacion) {
+              var headerHeight = header.offsetHeight;
+              programacion.style.marginTop = headerHeight + 'px';
+            }
+          }
+      
+          window.addEventListener('resize', ajustarMargenProgramacion);
+          window.addEventListener('load', ajustarMargenProgramacion);
+        });
+      </script>
+      -->
+    <footer>
+        <p> © DaniMT 2023 - 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+* {
+    font-family: sans-serif, Courier, monospace;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  .logo img {
+    margin-top: 20px;
+  }
+  
+  .box-container img {
+    margin-top: 25px;
+    width: 200px;
+    height: auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  
+  body {
+    text-align: center;
+  }
+  
+  .logo img{
+    margin-left: 30px;
+    width: 150px !important;
+    height: auto;
+    text-align: left !important;
+    margin-right: 1100px;
+    margin-bottom: 15px;
+  }
+  
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #323232;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-weight: bolder;
+  }
+  
+  .navbar {
+    display: flex;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: #323232;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    height: 60vh !important;
+    background: #101010;
+    background-size: cover;
+  }
+  
+  .enlaces, .box {
+    display: block;
+    width: 100%;
+  }
+  
+  .enlaces img {
+    border-radius: 0 !important;
+  }
+  
+  .title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .prr {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: white;
+    text-decoration: none;
+    background: #9c27b0;
+  }
+  
+  .btn:hover {
+    background: none;
+  }
+  
+  .btn-home {
+    display: flex;
+    margin-left: 55px;
+  }
+  
+  .btn-home a {
+    margin: 0 10px;
+  }
+  
+  .content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sau {
+    padding: 200px;
+    background: #1f1d1d;
+  }
+
+  #title1{
+    margin-top: 100px;
+  }
+  
+  #rutinas {
+    background: #101010;
+  }
+  
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .box-container .box {
+    height: 25rem;
+    width: 17rem;
+    background: #000000;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+  }
+  
+  .box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: #000000;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+  }
+  
+  .box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  
+  .about {
+    background: #101010;
+  }
+  
+  .contacto {
+    background: #1f1d1d;
+    padding: 60px;
+  }
+  
+  footer {
+    margin: 0;
+    background: #323232;
+    padding: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+  footer p {
+    margin-top: 40px;
+  }
+  
+  .button {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 6px solid #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: linear-gradient(    45deg, #ffffff, #000000  );
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .logo img {
+      margin-top: 10px; /* Ajustar el margen superior de la imagen del logo */
+      margin-left: 10px; /* Ajustar el margen izquierdo de la imagen del logo */
+      margin-right: 10px; /* Ajustar el margen derecho de la imagen del logo */
+    }
+  
+    .logo a {
+      margin-right: 0; /* Ajustar el margen derecho del enlace del logo */
+    }
+  
+    .navbar {
+      display: none;
+      margin-right: 0; /* Ajustar el margen derecho de la barra de navegación */
+    }
+  
+    .header {
+      height: 110vh !important; /* Ajustar la altura del encabezado */
+    }
+  
+    .title {
+      font-size: 40px; /* Ajustar el tamaño del título */
+      margin-bottom: 20px; /* Ajustar el margen inferior del título */
+    }
+  
+    .prr {
+      margin-left: 20px; /* Ajustar el margen izquierdo de prr */
+      margin-right: 20px; /* Ajustar el margen derecho de prr */
+    }
+  
+    .btn-home {
+      margin-left: 95px; /* Ajustar el margen izquierdo de los botones */
+    }
+  
+    .content {
+      height: auto; /* Ajustar la altura del contenido */
+      padding: 20px;
+    }
+  
+    .box-container .box {
+      height: auto; /* Ajustar la altura de las cajas */
+      width: 100%; /* Ajustar el ancho de las cajas */
+      margin: 1rem 0; /* Ajustar el margen entre las cajas */
+    }
+  
+    .box-container .box h3 {
+      font-size: 18px; /* Ajustar el tamaño del título de las cajas */
+    }
+  
+    .box-container .box p {
+      font-size: 14px; /* Ajustar el tamaño del texto de las cajas */
+    }
+  
+    footer p {
+      margin-top: 20px; /* Ajustar el margen superior del texto del pie de página */
+    }
+}
